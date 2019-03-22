@@ -3,7 +3,8 @@
 		.navbar
 			.navbar-nav
 				.nav-item
-					margin-left: 25px
+					&:first-child, &.active
+						margin-right: 25px
 				.nav-link
 					font-size: 18px
 					padding: 5px 20px
@@ -18,6 +19,39 @@
 
 	#link-clock
 		margin-right: -8px
+
+	.dropdown-menu
+		width: 100vw
+		left: auto
+		right: -112px !important
+		.btn 
+			font-size: 20px
+			min-width: 165px
+			padding: 11px 20px
+	.dropdown
+		&.show
+			&:after
+				content: ''
+				transform: translateX(-14px) rotate(45deg)
+				position: absolute
+				width: 28px
+				height: 28px
+				left: 50%
+				top: calc(100% + 10px)
+				background-color: #fff
+				box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.08)
+				z-index: 1001
+
+	.pad 
+		padding-left: 47px
+		padding-right: 47px
+		&.pad-3
+			padding-top: 32px
+			padding-bottom: 44px
+		.fa
+			margin-left: -18px
+			margin-top: 2px
+			position: absolute
 	
 @media (min-width: 768px)
 	.column-md-2
@@ -115,23 +149,17 @@
 		width: 200px
 		padding: 20px
 
-	.dropdown-menu
-		width: 200px
-		padding: 20px
-		margin: 10px 0
-		&:before
-			width: 14px
-			height: 14px
-			margin: 0 -7px
-			position: absolute
-			top: -7px
-			right: 24px
-
 	.modal-header 
 		.close
 			font-size: 20px
 
+	.fz-42
+		font-size: 28px
+	.fz-28
+		font-size: 22px
 	.fz-26
+		font-size: 20px
+	.fz-24
 		font-size: 20px
 	.fz-18
 		font-size: 1rem
@@ -164,4 +192,7 @@
 
 	.tooltip-body
 		margin: -20px
+
+	.dropdown
+		position: static
 	

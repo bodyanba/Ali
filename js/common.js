@@ -23,8 +23,8 @@ $(document).ready(function () {
 
 	function resetForm() {
 		$(".dropdown-menu").removeClass('active');
-		$("input").prop( "checked", false);
-		$("textarea").val("");
+		// $("input").prop( "checked", false);
+		// $("textarea").val("");
 	};
 
 	function btnSubmit() { 

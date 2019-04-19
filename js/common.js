@@ -21,7 +21,7 @@ $(document).ready(function () {
 		e.stopPropagation();
 	});
 
-	function resetForm() {
+	function resetForm(){
 		$(".dropdown-menu").removeClass('active');
 		// $("input").prop( "checked", false);
 		// $("textarea").val("");

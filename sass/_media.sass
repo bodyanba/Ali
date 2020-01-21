@@ -2,84 +2,19 @@
 	header.header
 		.navbar
 			.navbar-nav
-				.nav-item
-					&:first-child:not(:last-child), &.active
-						margin-right: 25px
 				.nav-link
 					font-size: 18px
 					padding: 5px 20px
+					margin-left: 25px
 
-	.bottom-buttons
-		margin-bottom: 80px
-
-	.before-buttons
-		padding-bottom: 38px
-	.bottom-buttons
-		margin-top: -38px !important
-
-	#link-clock
-		margin-right: -8px
-
-	.dropdown-menu
-		width: 100vw
-		left: auto
-		right: -112px !important
-		.btn 
-			font-size: 20px
-			min-width: 165px
-			padding: 11px 20px
-	.dropdown
-		&.show
-			&:after
-				content: ''
-				transform: translateX(-14px) rotate(45deg)
-				position: absolute
-				width: 28px
-				height: 28px
-				left: 50%
-				top: calc(100% + 10px)
-				background-color: #fff
-				box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.08)
-				z-index: 1001
-
-	.pad 
-		padding-left: 47px
-		padding-right: 47px
-		&.pad-3
-			padding-top: 32px
-			padding-bottom: 44px
-		.fa
-			margin-left: -18px
-			margin-top: 2px
-			position: absolute
-
-	.modal-sm
-		max-width: 458px
-	.modal-md
-		max-width: 540px
+	.main-container
+		padding-bottom: 80px
 	
 @media (min-width: 768px)
-	.column-md-2
-		-webkit-column-count: 2
-		-moz-column-count: 2
-		column-count: 2
-	.column-md-3
-		-webkit-column-count: 3
-		-moz-column-count: 3
-		column-count: 3
-
 	.btn
 		font-size: 18px
 		padding-top: 9.5px
 		padding-bottom: 9.5px
-	.btn-big 
-		font-size: 22px
-		padding: 14px 51px
-
-	.before-buttons
-		padding-bottom: 48px
-	.bottom-buttons
-		margin-top: -48px !important
 
 @media (min-width: 992px)
 	.container	
@@ -91,6 +26,26 @@
 	header.header
 		.navbar
 			padding-bottom: 2px
+
+	.box-p
+		padding-left: 13px
+		padding-right: 13px
+
+	.pt-lg-72
+		padding-top: 72px
+
+	.dropdown-menu-my
+		position: static !important
+		transform: none !important
+		display: block
+		background-color: transparent
+		padding: 0
+		margin: 0
+		color: inherit
+		float: none
+		min-width: auto
+		width: auto
+		box-shadow: none
 
 
 
@@ -117,14 +72,18 @@
 		max-height: 100%
 		padding-right: 0
 
+	.box-body 
+		padding-left: 40px
+		padding-right: 40px
+		textarea 
+			padding: 20px 0
+
 @media (max-width: 767px)
 	.main-container
 		min-height: 100vh
 
 	.banner-h1, .banner-h2
 		font-size: 50px
-	.banner-h3
-		font-size: 40px
 	.mh-406
 		min-height: 250px
 	.reflections
@@ -133,10 +92,29 @@
 
 	hr
 		&.green
-			margin-top: 14px
+			margin-top: 4px
+			margin-bottom: 46px
 		&.dotted
 			margin-top: 34px
 			margin-bottom: 25px
+
+	.box
+		padding: 5px
+		border-bottom-width: 2px
+		border-radius: 8px
+		&-body
+			padding: 1rem 15px
+			background-color: #FFFAF5
+			border-bottom-width: 2px
+			border-radius: 4px
+		&-p
+			padding: 0 0 1rem
+			font-size: 1rem
+			.sub-title
+				font-size: 1rem
+		textarea 
+			padding: 1rem 0
+			font-size: 22px
 
 @media (max-width: 575px)
 	.content-text
@@ -161,13 +139,7 @@
 		.close
 			font-size: 20px
 
-	.fz-42
-		font-size: 28px
-	.fz-28
-		font-size: 22px
 	.fz-26
-		font-size: 20px
-	.fz-24
 		font-size: 20px
 	.fz-18
 		font-size: 1rem
@@ -184,27 +156,36 @@
 			padding-left: 30px
 			padding-right: 20px
 			.navbar-nav
-				.nav-item
-					margin-left: 6px
 				.nav-link
 					padding: 2px 6px
+					margin-left: 6px
 
 	.bottom-buttons
 		margin-left: -15px
 		margin-right: -15px
 		overflow: hidden
+		background-color: $body-bg
 		background-image: none
 
 	.banner-h1, .banner-h2
 		font-size: 30px
 
-	.tooltip-body
-		margin: -20px
+	.navbar-2
+		padding-left: 15px !important
+		padding-right: 9px !important
 
-	.dropdown
-		position: static
+	.pb-194
+		padding-left: 15px
+		padding-right: 15px
 
-	.modal-body-2
-		padding-left: 30px
-		padding-right: 30px
+	.img-next 
+		font-size: 20px
+
+	.row-1
+		margin-left: -7.5px
+		margin-right: -7.5px
+		> [class*="col"]
+			padding-left: 7.5px
+			padding-right: 7.5px
+
 	

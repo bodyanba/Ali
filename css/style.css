@@ -377,8 +377,9 @@ hr.gray {
   left: 0;
   right: 0;
   background-color: #D0E3DC; }
-  .progress-2 .progress-bar {
-    background-color: #00b174; }
+
+.bg-success {
+  background-color: #00b174 !important; }
 
 .dropdown-menu {
   color: #404040;
